@@ -14,7 +14,7 @@ const u32bit BS = 8;
 const u32bit CT2 = 2;
 const u32bit CT32 = 32;
 
-void main(void)
+int main(void)
 {
 	GOST g1;
 	void cfb_run2test(GOST, byte [CT2][BS], byte [BS], byte [KL]);

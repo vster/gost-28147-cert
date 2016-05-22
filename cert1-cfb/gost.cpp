@@ -3,7 +3,7 @@
 * (C) 1999-2001 The OpenCL Project               *
 *************************************************/
 
-#include <opencl/gost.h>
+#include <gost.h>
 
 namespace OpenCL {
 

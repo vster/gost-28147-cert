@@ -22,14 +22,14 @@ class GOST : public BlockCipher
       void encrypt(byte block[BLOCKSIZE]) const { encrypt(block, block); }
       void decrypt(byte block[BLOCKSIZE]) const { decrypt(block, block); }
       void set_key(const byte[], u32bit = KEYLENGTH) throw(InvalidKeyLength);
-      void generate_sbox( );
+	  void generate_sbox( );
 	  void output_oid( int );
       void clear() throw() { EK.clear(); }
       GOST() : BlockCipher(name(), BLOCKSIZE, KEYLENGTH) {}
 	  static const char* OID[6];
    private:
       static u32bit SBOX1[256], SBOX2[256], SBOX3[256], SBOX4[256];
-      static const byte K1[16],K2[16],K3[16],K4[16],K5[16],K6[16],K7[16],K8[16];
+      static const byte K[6][8][16];
 	  static void round(u32bit&, u32bit);
       SecureBuffer<u32bit, 8> EK; 
 	};

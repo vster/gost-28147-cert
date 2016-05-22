@@ -4,7 +4,7 @@
 
 #include <iostream>
 #include <iomanip>
-#include <opencl/gost.h>
+#include <gost.h>
 
 using namespace std;
 using namespace OpenCL;
@@ -14,7 +14,7 @@ const u32bit BS = 8;
 const u32bit CT2 = 2;
 const u32bit CT32 = 32;
 
-void main(void)
+int main(void)
 {
 	GOST g1;
 	void ecb_run2test(GOST, byte [CT2][BS], byte [KL]);
