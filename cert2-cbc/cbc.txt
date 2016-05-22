@@ -1,0 +1,219 @@
+GOST 28147-89. CBC mode.
+
+TEST 1
+Test key:
+X0  00  00  00  00
+X1  00  00  00  00
+X2  00  00  00  00
+X3  00  00  00  00
+X4  ff  ff  ff  ff
+X5  ff  ff  ff  ff
+X6  ff  ff  ff  ff
+X7  ff  ff  ff  ff
+
+Init vector:
+S1   47 e3 a8 ff c3 a7 80 2a 
+
+Open data:
+To1  33 33 33 33 cc cc cc cc 
+To2  cc cc cc cc 33 33 33 33 
+
+Encrypted data:
+Ts1  6c 94 08 f0 34 b7 7d 38 
+Ts2  db d0 fc 19 2e eb 8a 63 
+
+Decrypted data:
+Td1  33 33 33 33 cc cc cc cc 
+Td2  cc cc cc cc 33 33 33 33 
+
+
+TEST 2
+Test key:
+X0  ff  ff  ff  ff
+X1  ff  ff  ff  ff
+X2  ff  ff  ff  ff
+X3  ff  ff  ff  ff
+X4  00  00  00  00
+X5  00  00  00  00
+X6  00  00  00  00
+X7  00  00  00  00
+
+Init vector:
+S1   47 e3 a8 ff c3 a7 80 2a 
+
+Open data:
+To1  33 33 33 33 cc cc cc cc 
+To2  cc cc cc cc 33 33 33 33 
+
+Encrypted data:
+Ts1  b9 fe e9 e1 8a 38 00 9f 
+Ts2  d0 2c c8 19 dd d4 bd 22 
+
+Decrypted data:
+Td1  33 33 33 33 cc cc cc cc 
+Td2  cc cc cc cc 33 33 33 33 
+
+
+TEST 3
+Test key:
+X0  55  55  55  55
+X1  aa  aa  aa  aa
+X2  55  55  55  55
+X3  aa  aa  aa  aa
+X4  55  55  55  55
+X5  aa  aa  aa  aa
+X6  55  55  55  55
+X7  aa  aa  aa  aa
+
+Init vector:
+S1   47 e3 a8 ff c3 a7 80 2a 
+
+Open data:
+To1  33 33 33 33 cc cc cc cc 
+To2  cc cc cc cc 33 33 33 33 
+
+Encrypted data:
+Ts1  a7 4b ad 4a 17 12 7c 40 
+Ts2  e7 61 4e 5a 49 55 df 93 
+
+Decrypted data:
+Td1  33 33 33 33 cc cc cc cc 
+Td2  cc cc cc cc 33 33 33 33 
+
+
+TEST 4
+Test key:
+X0  aa  aa  aa  aa
+X1  55  55  55  55
+X2  aa  aa  aa  aa
+X3  55  55  55  55
+X4  aa  aa  aa  aa
+X5  55  55  55  55
+X6  aa  aa  aa  aa
+X7  55  55  55  55
+
+Init vector:
+S1   47 e3 a8 ff c3 a7 80 2a 
+
+Open data:
+To1  33 33 33 33 cc cc cc cc 
+To2  cc cc cc cc 33 33 33 33 
+
+Encrypted data:
+Ts1  10 32 a3 fc 22 26 84 4d 
+Ts2  14 82 ff 7b 89 bf 2f 81 
+
+Decrypted data:
+Td1  33 33 33 33 cc cc cc cc 
+Td2  cc cc cc cc 33 33 33 33 
+
+
+TEST 5
+Test key:
+X0  e0  f6  75  04
+X1  fa  fb  38  50
+X2  90  c3  c7  d2
+X3  3d  ca  b3  ed
+X4  42  12  47  15
+X5  8a  1e  ae  91
+X6  9e  cd  79  2f
+X7  bd  ef  bc  d2
+
+Init vector:
+S1   47 e3 a8 ff c3 a7 80 2a 
+
+Open data:
+To1  33 33 33 33 cc cc cc cc 
+To2  cc cc cc cc 33 33 33 33 
+
+Encrypted data:
+Ts1  53 38 fb be 4a 88 96 49 
+Ts2  f4 e8 8e 07 73 9e d6 fe 
+
+Decrypted data:
+Td1  33 33 33 33 cc cc cc cc 
+Td2  cc cc cc cc 33 33 33 33 
+
+
+TEST 6
+Test key:
+X0  e0  f6  75  04
+X1  fa  fb  38  50
+X2  90  c3  c7  d2
+X3  3d  ca  b3  ed
+X4  42  12  47  15
+X5  8a  1e  ae  91
+X6  9e  cd  79  2f
+X7  bd  ef  bc  d2
+
+Init vector:
+S1   e6 42 4b 7d e6 64 cf 73 
+
+Open data:
+To01  00 01 02 03 04 05 06 07 
+To02  08 09 0a 0b 0c 0d 0e 0f 
+To03  10 11 12 13 14 15 16 17 
+To04  18 19 1a 1b 1c 1d 1e 1f 
+To05  20 21 22 23 24 25 26 27 
+To06  28 29 2a 2b 2c 2d 2e 2f 
+To07  30 31 32 33 34 35 36 37 
+To08  38 39 3a 3b 3c 3d 3e 3f 
+To09  40 41 42 43 44 45 46 47 
+To10  48 49 4a 4b 4c 4d 4e 4f 
+To11  50 51 52 53 54 55 56 57 
+To12  58 59 5a 5b 5c 5d 5e 5f 
+To13  60 61 62 63 64 65 66 67 
+To14  68 69 6a 6b 6c 6d 6e 6f 
+To15  70 71 72 73 74 75 76 77 
+To16  78 79 7a 7b 7c 7d 7e 7f 
+To17  80 81 82 83 84 85 86 87 
+To18  88 89 8a 8b 8c 8d 8e 8f 
+To19  90 91 92 93 94 95 96 97 
+To20  98 99 9a 9b 9c 9d 9e 9f 
+To21  a0 a1 a2 a3 a4 a5 a6 a7 
+To22  a8 a9 aa ab ac ad ae af 
+To23  b0 b1 b2 b3 b4 b5 b6 b7 
+To24  b8 b9 ba bb bc bd be bf 
+To25  c0 c1 c2 c3 c4 c5 c6 c7 
+To26  c8 c9 ca cb cc cd ce cf 
+To27  d0 d1 d2 d3 d4 d5 d6 d7 
+To28  d8 d9 da db dc dd de df 
+To29  e0 e1 e2 e3 e4 e5 e6 e7 
+To30  e8 e9 ea eb ec ed ee ef 
+To31  f0 f1 f2 f3 f4 f5 f6 f7 
+To32  f8 f9 fa fb fc fd fe ff 
+
+Encrypted data:
+Ts01  7b e8 34 7f 5e 4a 2e 96 
+Ts02  90 b3 80 85 5c d6 67 62 
+Ts03  9a c3 2c 4b 95 2d f1 46 
+Ts04  d8 8e e5 b0 ca ae 1c 6c 
+Ts05  54 73 82 09 23 1d fe 70 
+Ts06  31 8d e5 dc f7 47 d7 2c 
+Ts07  a8 ce 39 bb 63 21 b5 99 
+Ts08  29 15 97 92 cc 92 b8 0d 
+Ts09  0f 74 12 93 5c 6b 4f d9 
+Ts10  8d 8c e1 63 4a e9 43 4f 
+Ts11  88 91 31 12 e4 2d 70 60 
+Ts12  9b 94 f9 c8 15 65 da d0 
+Ts13  89 ba 60 44 d0 9b 10 5a 
+Ts14  c5 1e f3 ed 71 dd d7 c1 
+Ts15  18 30 31 8a 82 1e 4e 3a 
+Ts16  84 53 b8 01 f3 e1 c6 f5 
+Ts17  d8 e0 6c 9d 61 39 b0 7f 
+Ts18  73 a1 7a 45 a4 a4 c5 f9 
+Ts19  a9 4d c5 9c b4 55 df 5e 
+Ts20  1b a2 07 f7 30 ca 6d a6 
+Ts21  05 1a fa d2 a5 60 06 11 
+Ts22  7e df 85 dc 66 b1 5d f1 
+Ts23  00 96 e3 1c c9 4f de 35 
+Ts24  07 0e 8c 7f 0b d6 94 9a 
+Ts25  b7 f7 e9 c6 63 57 6f 1e 
+Ts26  ad a2 4e f1 5b 4e c3 af 
+Ts27  ef 9b 98 4a 49 ab 62 f1 
+Ts28  75 6d 93 a8 96 0d 4d a9 
+Ts29  ad d9 1d 92 df e4 d1 66 
+Ts30  9d 8d dc da 3a 63 12 21 
+Ts31  2f 79 1b 9a e1 40 65 9e 
+Ts32  b3 4c d6 4b 8e f2 21 ca 
+

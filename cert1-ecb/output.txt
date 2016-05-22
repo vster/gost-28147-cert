@@ -1,0 +1,25 @@
+GOST 28147-89. ECB mode.
+
+TEST 1
+Test key:
+X0  11  11  11  11
+X1  22  22  22  22
+X2  33  33  33  33
+X3  44  44  44  44
+X4  ff  ff  ff  ff
+X5  ff  ff  ff  ff
+X6  ff  ff  ff  ff
+X7  ff  ff  ff  ff
+
+Open data:
+To1  aa aa aa aa 55 55 55 55 
+To2  55 55 55 55 aa aa aa aa 
+
+Encrypted data:
+Ts1  c4 f6 f8 57 31 13 a0 5e 
+Ts2  58 74 4a a0 4f a9 cc 87 
+
+Decrypted data:
+Td1  aa aa aa aa 55 55 55 55 
+Td2  55 55 55 55 aa aa aa aa 
+

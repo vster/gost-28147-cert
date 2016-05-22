@@ -1,0 +1,1162 @@
+
+OID 1.2.643.2.2.31.3
+
+   K8 K7 K6 K5 K4 K3 K2 K1
+00  7  A  C  8  3  8  0  1
+01  4  9  9  D  6  2  1  B
+02  0  6  B  B  0  5  7  C
+03  5  8  1  0  1  0  D  2
+04  A  D  8  4  5  4  B  9
+05  2  E  E  5  D  9  4  D
+06  F  2  2  1  A  F  5  0
+07  E  0  4  2  8  A  2  F
+08  C  F  7  9  B  3  8  4
+09  6  3  3  3  2  7  E  5
+10  1  5  6  C  9  C  F  8
+11  B  B  5  E  7  D  C  E
+12  D  4  A  6  E  6  9  A
+13  9  1  0  F  F  E  A  7
+14  3  C  F  A  C  1  6  6
+15  8  7  D  7  4  B  3  3
+
+
+GOST 28147-89.
+ECB mode.
+
+TEST 1
+Test key:
+X0  00  00  00  00
+X1  00  00  00  00
+X2  00  00  00  00
+X3  00  00  00  00
+X4  ff  ff  ff  ff
+X5  ff  ff  ff  ff
+X6  ff  ff  ff  ff
+X7  ff  ff  ff  ff
+
+Open data:
+To01  33 33 33 33 cc cc cc cc 
+To02  cc cc cc cc 33 33 33 33 
+
+Encrypted data:
+Ts01  3e 30 8c 96 0e 8a e2 8a 
+Ts02  32 02 e0 43 24 e8 47 1c 
+
+Decrypted data:
+Td01  33 33 33 33 cc cc cc cc 
+Td02  cc cc cc cc 33 33 33 33 
+
+
+TEST 2
+Test key:
+X0  ff  ff  ff  ff
+X1  ff  ff  ff  ff
+X2  ff  ff  ff  ff
+X3  ff  ff  ff  ff
+X4  00  00  00  00
+X5  00  00  00  00
+X6  00  00  00  00
+X7  00  00  00  00
+
+Open data:
+To01  33 33 33 33 cc cc cc cc 
+To02  cc cc cc cc 33 33 33 33 
+
+Encrypted data:
+Ts01  5a 61 70 9b ff 5f 02 c9 
+Ts02  e7 75 7d 73 50 c2 07 50 
+
+Decrypted data:
+Td01  33 33 33 33 cc cc cc cc 
+Td02  cc cc cc cc 33 33 33 33 
+
+
+TEST 3
+Test key:
+X0  55  55  55  55
+X1  aa  aa  aa  aa
+X2  55  55  55  55
+X3  aa  aa  aa  aa
+X4  55  55  55  55
+X5  aa  aa  aa  aa
+X6  55  55  55  55
+X7  aa  aa  aa  aa
+
+Open data:
+To01  33 33 33 33 cc cc cc cc 
+To02  cc cc cc cc 33 33 33 33 
+
+Encrypted data:
+Ts01  7d 32 0b 5e 80 22 a9 db 
+Ts02  c6 00 ef 94 74 0a c8 0a 
+
+Decrypted data:
+Td01  33 33 33 33 cc cc cc cc 
+Td02  cc cc cc cc 33 33 33 33 
+
+
+TEST 4
+Test key:
+X0  aa  aa  aa  aa
+X1  55  55  55  55
+X2  aa  aa  aa  aa
+X3  55  55  55  55
+X4  aa  aa  aa  aa
+X5  55  55  55  55
+X6  aa  aa  aa  aa
+X7  55  55  55  55
+
+Open data:
+To01  33 33 33 33 cc cc cc cc 
+To02  cc cc cc cc 33 33 33 33 
+
+Encrypted data:
+Ts01  ff 7a 37 13 35 84 b0 0a 
+Ts02  bf 61 58 a4 d7 f2 24 76 
+
+Decrypted data:
+Td01  33 33 33 33 cc cc cc cc 
+Td02  cc cc cc cc 33 33 33 33 
+
+
+TEST 5
+Test key:
+X0  e0  f6  75  04
+X1  fa  fb  38  50
+X2  90  c3  c7  d2
+X3  3d  ca  b3  ed
+X4  42  12  47  15
+X5  8a  1e  ae  91
+X6  9e  cd  79  2f
+X7  bd  ef  bc  d2
+
+Open data:
+To01  33 33 33 33 cc cc cc cc 
+To02  cc cc cc cc 33 33 33 33 
+
+Encrypted data:
+Ts01  1e 42 b5 53 6c 3b e1 38 
+Ts02  a8 89 96 cc d9 83 f6 77 
+
+Decrypted data:
+Td01  33 33 33 33 cc cc cc cc 
+Td02  cc cc cc cc 33 33 33 33 
+
+
+TEST 6
+Test key:
+X0  e0  f6  75  04
+X1  fa  fb  38  50
+X2  90  c3  c7  d2
+X3  3d  ca  b3  ed
+X4  42  12  47  15
+X5  8a  1e  ae  91
+X6  9e  cd  79  2f
+X7  bd  ef  bc  d2
+
+Open data:
+To01  00 01 02 03 04 05 06 07 
+To02  08 09 0a 0b 0c 0d 0e 0f 
+To03  10 11 12 13 14 15 16 17 
+To04  18 19 1a 1b 1c 1d 1e 1f 
+To05  20 21 22 23 24 25 26 27 
+To06  28 29 2a 2b 2c 2d 2e 2f 
+To07  30 31 32 33 34 35 36 37 
+To08  38 39 3a 3b 3c 3d 3e 3f 
+To09  40 41 42 43 44 45 46 47 
+To10  48 49 4a 4b 4c 4d 4e 4f 
+To11  50 51 52 53 54 55 56 57 
+To12  58 59 5a 5b 5c 5d 5e 5f 
+To13  60 61 62 63 64 65 66 67 
+To14  68 69 6a 6b 6c 6d 6e 6f 
+To15  70 71 72 73 74 75 76 77 
+To16  78 79 7a 7b 7c 7d 7e 7f 
+To17  80 81 82 83 84 85 86 87 
+To18  88 89 8a 8b 8c 8d 8e 8f 
+To19  90 91 92 93 94 95 96 97 
+To20  98 99 9a 9b 9c 9d 9e 9f 
+To21  a0 a1 a2 a3 a4 a5 a6 a7 
+To22  a8 a9 aa ab ac ad ae af 
+To23  b0 b1 b2 b3 b4 b5 b6 b7 
+To24  b8 b9 ba bb bc bd be bf 
+To25  c0 c1 c2 c3 c4 c5 c6 c7 
+To26  c8 c9 ca cb cc cd ce cf 
+To27  d0 d1 d2 d3 d4 d5 d6 d7 
+To28  d8 d9 da db dc dd de df 
+To29  e0 e1 e2 e3 e4 e5 e6 e7 
+To30  e8 e9 ea eb ec ed ee ef 
+To31  f0 f1 f2 f3 f4 f5 f6 f7 
+To32  f8 f9 fa fb fc fd fe ff 
+
+Encrypted data:
+Ts01  8f 70 bc 8c e8 1a 7a 7e 
+Ts02  66 4a 17 be a0 dd 83 4e 
+Ts03  fb 3c f6 24 ff 62 94 80 
+Ts04  c2 51 d9 d8 c1 92 8b db 
+Ts05  e9 b4 d3 56 22 40 f6 0e 
+Ts06  48 50 bc 7d 86 8d 43 1f 
+Ts07  31 12 84 6a 13 62 a5 c8 
+Ts08  cc 40 ea 44 3b 35 ca 33 
+Ts09  5a ef 20 fc 32 13 19 4f 
+Ts10  7f ef 70 08 38 15 9d 91 
+Ts11  ea 07 9c 0b ff 13 aa c4 
+Ts12  21 94 bc d7 ae 79 30 c1 
+Ts13  ab e6 9a af 85 62 c5 51 
+Ts14  df f2 ec f7 12 d7 0a 53 
+Ts15  54 7c 08 27 74 96 21 fd 
+Ts16  83 f2 f8 ef 1e 34 68 0a 
+Ts17  a5 6c 7d c3 bd 98 54 f4 
+Ts18  14 da 88 d3 cc e7 94 36 
+Ts19  32 2c 34 6d 55 48 5d 71 
+Ts20  e3 ad 01 27 01 ad 03 6d 
+Ts21  c8 c9 64 aa 74 c6 71 11 
+Ts22  6b 2d 33 53 45 98 fd c3 
+Ts23  10 0a cb f2 46 8a f3 d6 
+Ts24  fb 77 5a 14 cc 50 29 06 
+Ts25  99 d6 1f ee 61 5a 5b c9 
+Ts26  41 83 28 44 cd 0a 5a ff 
+Ts27  98 3f e3 62 50 b7 2e 73 
+Ts28  e8 05 af f5 30 20 b9 94 
+Ts29  69 67 aa c1 55 28 27 64 
+Ts30  72 0e a1 5d d7 6a 56 71 
+Ts31  37 6e b4 47 2e ea c6 f4 
+Ts32  bc 58 61 1f 12 d0 db 5f 
+
+Decrypted data:
+Td01  00 01 02 03 04 05 06 07 
+Td02  08 09 0a 0b 0c 0d 0e 0f 
+Td03  10 11 12 13 14 15 16 17 
+Td04  18 19 1a 1b 1c 1d 1e 1f 
+Td05  20 21 22 23 24 25 26 27 
+Td06  28 29 2a 2b 2c 2d 2e 2f 
+Td07  30 31 32 33 34 35 36 37 
+Td08  38 39 3a 3b 3c 3d 3e 3f 
+Td09  40 41 42 43 44 45 46 47 
+Td10  48 49 4a 4b 4c 4d 4e 4f 
+Td11  50 51 52 53 54 55 56 57 
+Td12  58 59 5a 5b 5c 5d 5e 5f 
+Td13  60 61 62 63 64 65 66 67 
+Td14  68 69 6a 6b 6c 6d 6e 6f 
+Td15  70 71 72 73 74 75 76 77 
+Td16  78 79 7a 7b 7c 7d 7e 7f 
+Td17  80 81 82 83 84 85 86 87 
+Td18  88 89 8a 8b 8c 8d 8e 8f 
+Td19  90 91 92 93 94 95 96 97 
+Td20  98 99 9a 9b 9c 9d 9e 9f 
+Td21  a0 a1 a2 a3 a4 a5 a6 a7 
+Td22  a8 a9 aa ab ac ad ae af 
+Td23  b0 b1 b2 b3 b4 b5 b6 b7 
+Td24  b8 b9 ba bb bc bd be bf 
+Td25  c0 c1 c2 c3 c4 c5 c6 c7 
+Td26  c8 c9 ca cb cc cd ce cf 
+Td27  d0 d1 d2 d3 d4 d5 d6 d7 
+Td28  d8 d9 da db dc dd de df 
+Td29  e0 e1 e2 e3 e4 e5 e6 e7 
+Td30  e8 e9 ea eb ec ed ee ef 
+Td31  f0 f1 f2 f3 f4 f5 f6 f7 
+Td32  f8 f9 fa fb fc fd fe ff 
+
+
+
+GOST 28147-89.
+CBC mode.
+
+TEST 1
+Test key:
+X0  00  00  00  00
+X1  00  00  00  00
+X2  00  00  00  00
+X3  00  00  00  00
+X4  ff  ff  ff  ff
+X5  ff  ff  ff  ff
+X6  ff  ff  ff  ff
+X7  ff  ff  ff  ff
+
+Init vector:
+S  47 e3 a8 ff c3 a7 80 2a 
+
+Open data:
+To01  33 33 33 33 cc cc cc cc 
+To02  cc cc cc cc 33 33 33 33 
+
+Encrypted data:
+Ts01  06 6c a0 be a6 d1 43 df 
+Ts02  91 2a d1 b6 24 41 96 1f 
+
+Decrypted data:
+Td01  33 33 33 33 cc cc cc cc 
+Td02  cc cc cc cc 33 33 33 33 
+
+
+TEST 2
+Test key:
+X0  ff  ff  ff  ff
+X1  ff  ff  ff  ff
+X2  ff  ff  ff  ff
+X3  ff  ff  ff  ff
+X4  00  00  00  00
+X5  00  00  00  00
+X6  00  00  00  00
+X7  00  00  00  00
+
+Init vector:
+S  47 e3 a8 ff c3 a7 80 2a 
+
+Open data:
+To01  33 33 33 33 cc cc cc cc 
+To02  cc cc cc cc 33 33 33 33 
+
+Encrypted data:
+Ts01  3b e0 95 f8 b6 2c ad 04 
+Ts02  11 7c b7 c2 ca 90 a6 c0 
+
+Decrypted data:
+Td01  33 33 33 33 cc cc cc cc 
+Td02  cc cc cc cc 33 33 33 33 
+
+
+TEST 3
+Test key:
+X0  55  55  55  55
+X1  aa  aa  aa  aa
+X2  55  55  55  55
+X3  aa  aa  aa  aa
+X4  55  55  55  55
+X5  aa  aa  aa  aa
+X6  55  55  55  55
+X7  aa  aa  aa  aa
+
+Init vector:
+S  47 e3 a8 ff c3 a7 80 2a 
+
+Open data:
+To01  33 33 33 33 cc cc cc cc 
+To02  cc cc cc cc 33 33 33 33 
+
+Encrypted data:
+Ts01  29 6e 07 97 4b 35 33 9d 
+Ts02  15 5a 9b a0 c7 1c 8f 96 
+
+Decrypted data:
+Td01  33 33 33 33 cc cc cc cc 
+Td02  cc cc cc cc 33 33 33 33 
+
+
+TEST 4
+Test key:
+X0  aa  aa  aa  aa
+X1  55  55  55  55
+X2  aa  aa  aa  aa
+X3  55  55  55  55
+X4  aa  aa  aa  aa
+X5  55  55  55  55
+X6  aa  aa  aa  aa
+X7  55  55  55  55
+
+Init vector:
+S  47 e3 a8 ff c3 a7 80 2a 
+
+Open data:
+To01  33 33 33 33 cc cc cc cc 
+To02  cc cc cc cc 33 33 33 33 
+
+Encrypted data:
+Ts01  ac dc 6c 38 d0 ce a5 6a 
+Ts02  9c d9 32 84 9e 7c e4 b1 
+
+Decrypted data:
+Td01  33 33 33 33 cc cc cc cc 
+Td02  cc cc cc cc 33 33 33 33 
+
+
+TEST 5
+Test key:
+X0  e0  f6  75  04
+X1  fa  fb  38  50
+X2  90  c3  c7  d2
+X3  3d  ca  b3  ed
+X4  42  12  47  15
+X5  8a  1e  ae  91
+X6  9e  cd  79  2f
+X7  bd  ef  bc  d2
+
+Init vector:
+S  47 e3 a8 ff c3 a7 80 2a 
+
+Open data:
+To01  33 33 33 33 cc cc cc cc 
+To02  cc cc cc cc 33 33 33 33 
+
+Encrypted data:
+Ts01  ae 75 01 fd e3 18 ac f8 
+Ts02  59 93 01 5d 05 0a 98 51 
+
+Decrypted data:
+Td01  33 33 33 33 cc cc cc cc 
+Td02  cc cc cc cc 33 33 33 33 
+
+
+TEST 6
+Test key:
+X0  e0  f6  75  04
+X1  fa  fb  38  50
+X2  90  c3  c7  d2
+X3  3d  ca  b3  ed
+X4  42  12  47  15
+X5  8a  1e  ae  91
+X6  9e  cd  79  2f
+X7  bd  ef  bc  d2
+
+Init vector:
+S  e6 42 4b 7d e6 64 cf 73 
+
+Open data:
+To01  00 01 02 03 04 05 06 07 
+To02  08 09 0a 0b 0c 0d 0e 0f 
+To03  10 11 12 13 14 15 16 17 
+To04  18 19 1a 1b 1c 1d 1e 1f 
+To05  20 21 22 23 24 25 26 27 
+To06  28 29 2a 2b 2c 2d 2e 2f 
+To07  30 31 32 33 34 35 36 37 
+To08  38 39 3a 3b 3c 3d 3e 3f 
+To09  40 41 42 43 44 45 46 47 
+To10  48 49 4a 4b 4c 4d 4e 4f 
+To11  50 51 52 53 54 55 56 57 
+To12  58 59 5a 5b 5c 5d 5e 5f 
+To13  60 61 62 63 64 65 66 67 
+To14  68 69 6a 6b 6c 6d 6e 6f 
+To15  70 71 72 73 74 75 76 77 
+To16  78 79 7a 7b 7c 7d 7e 7f 
+To17  80 81 82 83 84 85 86 87 
+To18  88 89 8a 8b 8c 8d 8e 8f 
+To19  90 91 92 93 94 95 96 97 
+To20  98 99 9a 9b 9c 9d 9e 9f 
+To21  a0 a1 a2 a3 a4 a5 a6 a7 
+To22  a8 a9 aa ab ac ad ae af 
+To23  b0 b1 b2 b3 b4 b5 b6 b7 
+To24  b8 b9 ba bb bc bd be bf 
+To25  c0 c1 c2 c3 c4 c5 c6 c7 
+To26  c8 c9 ca cb cc cd ce cf 
+To27  d0 d1 d2 d3 d4 d5 d6 d7 
+To28  d8 d9 da db dc dd de df 
+To29  e0 e1 e2 e3 e4 e5 e6 e7 
+To30  e8 e9 ea eb ec ed ee ef 
+To31  f0 f1 f2 f3 f4 f5 f6 f7 
+To32  f8 f9 fa fb fc fd fe ff 
+
+Encrypted data:
+Ts01  df 94 eb 4f ee b5 fd 88 
+Ts02  55 3f 4a 91 ef 3e 26 e3 
+Ts03  dc 41 9c 7f 56 51 24 0b 
+Ts04  4d 38 59 73 82 68 61 ef 
+Ts05  fe 76 af 97 f3 ac 8b 88 
+Ts06  f5 06 9f 69 ba a9 62 d1 
+Ts07  cc 9a 78 05 2b 54 1e 6a 
+Ts08  e7 98 d7 d6 7b 7d 73 0f 
+Ts09  a9 59 71 b6 76 f0 cb 0b 
+Ts10  a3 42 e7 93 05 58 ed d0 
+Ts11  5c f1 f5 16 ad 23 53 d6 
+Ts12  1c ea 22 82 17 cd 3f b0 
+Ts13  94 c7 56 f5 df 2c e2 f3 
+Ts14  83 02 35 bb 0c cf 18 56 
+Ts15  c0 86 54 e9 25 fa b2 d1 
+Ts16  21 a9 57 d5 e5 81 cd 71 
+Ts17  c4 a1 0b 2b 22 7a 80 09 
+Ts18  f4 22 27 7f 94 63 be 8c 
+Ts19  2d bc 62 ea 14 45 d9 f7 
+Ts20  d7 0c dd 51 05 84 e8 e1 
+Ts21  51 36 ee 19 de 0f d4 c4 
+Ts22  e9 0d 0c 11 1a 87 bd 3c 
+Ts23  f7 c8 3f 88 36 0b 1f 6b 
+Ts24  18 d6 e2 05 87 37 37 4c 
+Ts25  d0 d1 74 4c c4 86 60 91 
+Ts26  b9 25 1c e6 fb 92 8e a4 
+Ts27  27 41 75 53 f0 72 82 38 
+Ts28  49 12 8a 3b fe 78 ba 49 
+Ts29  3a a6 55 6b 8d 25 a6 94 
+Ts30  10 30 b7 bb ab ac 98 4f 
+Ts31  d5 8b 18 3e ac 3b 1b 74 
+Ts32  dd 97 df 2b 96 f6 37 50 
+
+Decrypted data:
+Td01  00 01 02 03 04 05 06 07 
+Td02  08 09 0a 0b 0c 0d 0e 0f 
+Td03  10 11 12 13 14 15 16 17 
+Td04  18 19 1a 1b 1c 1d 1e 1f 
+Td05  20 21 22 23 24 25 26 27 
+Td06  28 29 2a 2b 2c 2d 2e 2f 
+Td07  30 31 32 33 34 35 36 37 
+Td08  38 39 3a 3b 3c 3d 3e 3f 
+Td09  40 41 42 43 44 45 46 47 
+Td10  48 49 4a 4b 4c 4d 4e 4f 
+Td11  50 51 52 53 54 55 56 57 
+Td12  58 59 5a 5b 5c 5d 5e 5f 
+Td13  60 61 62 63 64 65 66 67 
+Td14  68 69 6a 6b 6c 6d 6e 6f 
+Td15  70 71 72 73 74 75 76 77 
+Td16  78 79 7a 7b 7c 7d 7e 7f 
+Td17  80 81 82 83 84 85 86 87 
+Td18  88 89 8a 8b 8c 8d 8e 8f 
+Td19  90 91 92 93 94 95 96 97 
+Td20  98 99 9a 9b 9c 9d 9e 9f 
+Td21  a0 a1 a2 a3 a4 a5 a6 a7 
+Td22  a8 a9 aa ab ac ad ae af 
+Td23  b0 b1 b2 b3 b4 b5 b6 b7 
+Td24  b8 b9 ba bb bc bd be bf 
+Td25  c0 c1 c2 c3 c4 c5 c6 c7 
+Td26  c8 c9 ca cb cc cd ce cf 
+Td27  d0 d1 d2 d3 d4 d5 d6 d7 
+Td28  d8 d9 da db dc dd de df 
+Td29  e0 e1 e2 e3 e4 e5 e6 e7 
+Td30  e8 e9 ea eb ec ed ee ef 
+Td31  f0 f1 f2 f3 f4 f5 f6 f7 
+Td32  f8 f9 fa fb fc fd fe ff 
+
+
+
+GOST 28147-89.
+OFB mode.
+
+TEST 1
+Test key:
+X0  00  00  00  00
+X1  00  00  00  00
+X2  00  00  00  00
+X3  00  00  00  00
+X4  ff  ff  ff  ff
+X5  ff  ff  ff  ff
+X6  ff  ff  ff  ff
+X7  ff  ff  ff  ff
+
+Init vector:
+S  47 e3 a8 ff c3 a7 80 2a 
+
+Open data:
+To01  33 33 33 33 cc cc cc cc 
+To02  cc cc cc cc 33 33 33 33 
+
+Encrypted data:
+Ts01  36 6f 19 cb 79 6c c8 a0 
+Ts02  c2 af 6e a6 c2 48 92 8b 
+
+Decrypted data:
+Td01  33 33 33 33 cc cc cc cc 
+Td02  cc cc cc cc 33 33 33 33 
+
+
+TEST 2
+Test key:
+X0  ff  ff  ff  ff
+X1  ff  ff  ff  ff
+X2  ff  ff  ff  ff
+X3  ff  ff  ff  ff
+X4  00  00  00  00
+X5  00  00  00  00
+X6  00  00  00  00
+X7  00  00  00  00
+
+Init vector:
+S  47 e3 a8 ff c3 a7 80 2a 
+
+Open data:
+To01  33 33 33 33 cc cc cc cc 
+To02  cc cc cc cc 33 33 33 33 
+
+Encrypted data:
+Ts01  ad 19 d2 60 c5 4a ba 5c 
+Ts02  14 91 27 61 c0 17 81 74 
+
+Decrypted data:
+Td01  33 33 33 33 cc cc cc cc 
+Td02  cc cc cc cc 33 33 33 33 
+
+
+TEST 3
+Test key:
+X0  55  55  55  55
+X1  aa  aa  aa  aa
+X2  55  55  55  55
+X3  aa  aa  aa  aa
+X4  55  55  55  55
+X5  aa  aa  aa  aa
+X6  55  55  55  55
+X7  aa  aa  aa  aa
+
+Init vector:
+S  47 e3 a8 ff c3 a7 80 2a 
+
+Open data:
+To01  33 33 33 33 cc cc cc cc 
+To02  cc cc cc cc 33 33 33 33 
+
+Encrypted data:
+Ts01  30 fa 7b de a5 6b 65 4c 
+Ts02  cb e3 9b 3c 8c 73 12 0e 
+
+Decrypted data:
+Td01  33 33 33 33 cc cc cc cc 
+Td02  cc cc cc cc 33 33 33 33 
+
+
+TEST 4
+Test key:
+X0  aa  aa  aa  aa
+X1  55  55  55  55
+X2  aa  aa  aa  aa
+X3  55  55  55  55
+X4  aa  aa  aa  aa
+X5  55  55  55  55
+X6  aa  aa  aa  aa
+X7  55  55  55  55
+
+Init vector:
+S  47 e3 a8 ff c3 a7 80 2a 
+
+Open data:
+To01  33 33 33 33 cc cc cc cc 
+To02  cc cc cc cc 33 33 33 33 
+
+Encrypted data:
+Ts01  bf b0 43 2a 0f 16 86 b1 
+Ts02  5f 29 63 ce 56 c5 40 95 
+
+Decrypted data:
+Td01  33 33 33 33 cc cc cc cc 
+Td02  cc cc cc cc 33 33 33 33 
+
+
+TEST 5
+Test key:
+X0  e0  f6  75  04
+X1  fa  fb  38  50
+X2  90  c3  c7  d2
+X3  3d  ca  b3  ed
+X4  42  12  47  15
+X5  8a  1e  ae  91
+X6  9e  cd  79  2f
+X7  bd  ef  bc  d2
+
+Init vector:
+S  47 e3 a8 ff c3 a7 80 2a 
+
+Open data:
+To01  33 33 33 33 cc cc cc cc 
+To02  cc cc cc cc 33 33 33 33 
+
+Encrypted data:
+Ts01  7c 34 df 2d 3e 42 a6 49 
+Ts02  e3 ad 96 f9 4b 51 2f 98 
+
+Decrypted data:
+Td01  33 33 33 33 cc cc cc cc 
+Td02  cc cc cc cc 33 33 33 33 
+
+
+TEST 6
+Test key:
+X0  e0  f6  75  04
+X1  fa  fb  38  50
+X2  90  c3  c7  d2
+X3  3d  ca  b3  ed
+X4  42  12  47  15
+X5  8a  1e  ae  91
+X6  9e  cd  79  2f
+X7  bd  ef  bc  d2
+
+Init vector:
+S  e6 42 4b 7d e6 64 cf 73 
+
+Open data:
+To01  00 01 02 03 04 05 06 07 
+To02  08 09 0a 0b 0c 0d 0e 0f 
+To03  10 11 12 13 14 15 16 17 
+To04  18 19 1a 1b 1c 1d 1e 1f 
+To05  20 21 22 23 24 25 26 27 
+To06  28 29 2a 2b 2c 2d 2e 2f 
+To07  30 31 32 33 34 35 36 37 
+To08  38 39 3a 3b 3c 3d 3e 3f 
+To09  40 41 42 43 44 45 46 47 
+To10  48 49 4a 4b 4c 4d 4e 4f 
+To11  50 51 52 53 54 55 56 57 
+To12  58 59 5a 5b 5c 5d 5e 5f 
+To13  60 61 62 63 64 65 66 67 
+To14  68 69 6a 6b 6c 6d 6e 6f 
+To15  70 71 72 73 74 75 76 77 
+To16  78 79 7a 7b 7c 7d 7e 7f 
+To17  80 81 82 83 84 85 86 87 
+To18  88 89 8a 8b 8c 8d 8e 8f 
+To19  90 91 92 93 94 95 96 97 
+To20  98 99 9a 9b 9c 9d 9e 9f 
+To21  a0 a1 a2 a3 a4 a5 a6 a7 
+To22  a8 a9 aa ab ac ad ae af 
+To23  b0 b1 b2 b3 b4 b5 b6 b7 
+To24  b8 b9 ba bb bc bd be bf 
+To25  c0 c1 c2 c3 c4 c5 c6 c7 
+To26  c8 c9 ca cb cc cd ce cf 
+To27  d0 d1 d2 d3 d4 d5 d6 d7 
+To28  d8 d9 da db dc dd de df 
+To29  e0 e1 e2 e3 e4 e5 e6 e7 
+To30  e8 e9 ea eb ec ed ee ef 
+To31  f0 f1 f2 f3 f4 f5 f6 f7 
+To32  f8 f9 fa fb fc fd fe ff 
+
+Encrypted data:
+Ts01  4c 84 93 97 02 4a 71 fc 
+Ts02  98 43 c0 54 95 0a 61 5e 
+Ts03  f2 86 71 a5 37 0e 31 f2 
+Ts04  5b 22 ec c0 3b c1 60 32 
+Ts05  a8 0c c0 d5 99 9f f8 90 
+Ts06  27 1c 87 3c 84 9d 55 56 
+Ts07  a9 61 34 52 2f 30 df cc 
+Ts08  81 bc 7c c6 5d 6b 1c 38 
+Ts09  f8 f1 ce 00 88 c7 e9 c1 
+Ts10  fd 0b a5 9f 03 af 83 99 
+Ts11  48 73 23 59 3f ba e2 2b 
+Ts12  4d 84 22 e6 38 94 fe 04 
+Ts13  e1 fe c1 d4 d8 c1 cf 98 
+Ts14  3d 0a 70 37 0d dc 6f 26 
+Ts15  e0 97 35 4d 99 64 77 95 
+Ts16  2a 54 9d 24 1e 54 69 b0 
+Ts17  f5 5c 9c b0 d5 6b da 6b 
+Ts18  50 50 88 0e af 61 e4 a9 
+Ts19  44 6a 62 33 37 a4 0b c1 
+Ts20  82 1b b3 ca db 9c 56 da 
+Ts21  3b ee 81 60 f7 54 af a3 
+Ts22  1d 24 e5 aa 9a b4 4d 6a 
+Ts23  16 1e 4a b2 84 d5 48 9f 
+Ts24  9d 48 8f f5 bb 7d 0e a4 
+Ts25  e0 32 77 27 55 ce 20 f9 
+Ts26  1a ca 6c d9 a7 ac ea 28 
+Ts27  96 95 ea 6f 07 43 65 91 
+Ts28  c6 31 f4 c7 af 42 ff 32 
+Ts29  24 92 01 f6 c1 61 88 ed 
+Ts30  c2 d4 e4 13 91 0c 8a f7 
+Ts31  23 07 bc 49 73 ce 44 d6 
+Ts32  d4 9d 93 44 84 35 75 4f 
+
+Decrypted data:
+Td01  00 01 02 03 04 05 06 07 
+Td02  08 09 0a 0b 0c 0d 0e 0f 
+Td03  10 11 12 13 14 15 16 17 
+Td04  18 19 1a 1b 1c 1d 1e 1f 
+Td05  20 21 22 23 24 25 26 27 
+Td06  28 29 2a 2b 2c 2d 2e 2f 
+Td07  30 31 32 33 34 35 36 37 
+Td08  38 39 3a 3b 3c 3d 3e 3f 
+Td09  40 41 42 43 44 45 46 47 
+Td10  48 49 4a 4b 4c 4d 4e 4f 
+Td11  50 51 52 53 54 55 56 57 
+Td12  58 59 5a 5b 5c 5d 5e 5f 
+Td13  60 61 62 63 64 65 66 67 
+Td14  68 69 6a 6b 6c 6d 6e 6f 
+Td15  70 71 72 73 74 75 76 77 
+Td16  78 79 7a 7b 7c 7d 7e 7f 
+Td17  80 81 82 83 84 85 86 87 
+Td18  88 89 8a 8b 8c 8d 8e 8f 
+Td19  90 91 92 93 94 95 96 97 
+Td20  98 99 9a 9b 9c 9d 9e 9f 
+Td21  a0 a1 a2 a3 a4 a5 a6 a7 
+Td22  a8 a9 aa ab ac ad ae af 
+Td23  b0 b1 b2 b3 b4 b5 b6 b7 
+Td24  b8 b9 ba bb bc bd be bf 
+Td25  c0 c1 c2 c3 c4 c5 c6 c7 
+Td26  c8 c9 ca cb cc cd ce cf 
+Td27  d0 d1 d2 d3 d4 d5 d6 d7 
+Td28  d8 d9 da db dc dd de df 
+Td29  e0 e1 e2 e3 e4 e5 e6 e7 
+Td30  e8 e9 ea eb ec ed ee ef 
+Td31  f0 f1 f2 f3 f4 f5 f6 f7 
+Td32  f8 f9 fa fb fc fd fe ff 
+
+
+
+GOST 28147-89.
+CFB mode.
+
+TEST 1
+Test key:
+X0  00  00  00  00
+X1  00  00  00  00
+X2  00  00  00  00
+X3  00  00  00  00
+X4  ff  ff  ff  ff
+X5  ff  ff  ff  ff
+X6  ff  ff  ff  ff
+X7  ff  ff  ff  ff
+
+Init vector:
+S  47 e3 a8 ff c3 a7 80 2a 
+
+Open data:
+To01  33 33 33 33 cc cc cc cc 
+To02  cc cc cc cc 33 33 33 33 
+
+Encrypted data:
+Ts01  69 bd 21 43 32 e7 24 d5 
+Ts02  2e d3 2c ac 26 74 6e ee 
+
+Decrypted data:
+Td01  33 33 33 33 cc cc cc cc 
+Td02  cc cc cc cc 33 33 33 33 
+
+
+TEST 2
+Test key:
+X0  ff  ff  ff  ff
+X1  ff  ff  ff  ff
+X2  ff  ff  ff  ff
+X3  ff  ff  ff  ff
+X4  00  00  00  00
+X5  00  00  00  00
+X6  00  00  00  00
+X7  00  00  00  00
+
+Init vector:
+S  47 e3 a8 ff c3 a7 80 2a 
+
+Open data:
+To01  33 33 33 33 cc cc cc cc 
+To02  cc cc cc cc 33 33 33 33 
+
+Encrypted data:
+Ts01  13 5f de c2 12 ff d7 d1 
+Ts02  30 5a f6 66 06 33 14 6a 
+
+Decrypted data:
+Td01  33 33 33 33 cc cc cc cc 
+Td02  cc cc cc cc 33 33 33 33 
+
+
+TEST 3
+Test key:
+X0  55  55  55  55
+X1  aa  aa  aa  aa
+X2  55  55  55  55
+X3  aa  aa  aa  aa
+X4  55  55  55  55
+X5  aa  aa  aa  aa
+X6  55  55  55  55
+X7  aa  aa  aa  aa
+
+Init vector:
+S  47 e3 a8 ff c3 a7 80 2a 
+
+Open data:
+To01  33 33 33 33 cc cc cc cc 
+To02  cc cc cc cc 33 33 33 33 
+
+Encrypted data:
+Ts01  30 28 c2 25 a5 69 09 df 
+Ts02  ac c6 df b0 41 a4 81 ef 
+
+Decrypted data:
+Td01  33 33 33 33 cc cc cc cc 
+Td02  cc cc cc cc 33 33 33 33 
+
+
+TEST 4
+Test key:
+X0  aa  aa  aa  aa
+X1  55  55  55  55
+X2  aa  aa  aa  aa
+X3  55  55  55  55
+X4  aa  aa  aa  aa
+X5  55  55  55  55
+X6  aa  aa  aa  aa
+X7  55  55  55  55
+
+Init vector:
+S  47 e3 a8 ff c3 a7 80 2a 
+
+Open data:
+To01  33 33 33 33 cc cc cc cc 
+To02  cc cc cc cc 33 33 33 33 
+
+Encrypted data:
+Ts01  2d 81 b3 b8 c8 2c 10 f8 
+Ts02  22 b2 30 da 43 eb 03 f3 
+
+Decrypted data:
+Td01  33 33 33 33 cc cc cc cc 
+Td02  cc cc cc cc 33 33 33 33 
+
+
+TEST 5
+Test key:
+X0  e0  f6  75  04
+X1  fa  fb  38  50
+X2  90  c3  c7  d2
+X3  3d  ca  b3  ed
+X4  42  12  47  15
+X5  8a  1e  ae  91
+X6  9e  cd  79  2f
+X7  bd  ef  bc  d2
+
+Init vector:
+S  47 e3 a8 ff c3 a7 80 2a 
+
+Open data:
+To01  33 33 33 33 cc cc cc cc 
+To02  cc cc cc cc 33 33 33 33 
+
+Encrypted data:
+Ts01  be 06 af bb 58 f3 35 32 
+Ts02  08 0c 6a 65 99 24 2b cb 
+
+Decrypted data:
+Td01  33 33 33 33 cc cc cc cc 
+Td02  cc cc cc cc 33 33 33 33 
+
+
+TEST 6
+Test key:
+X0  e0  f6  75  04
+X1  fa  fb  38  50
+X2  90  c3  c7  d2
+X3  3d  ca  b3  ed
+X4  42  12  47  15
+X5  8a  1e  ae  91
+X6  9e  cd  79  2f
+X7  bd  ef  bc  d2
+
+Init vector:
+S  e6 42 4b 7d e6 64 cf 73 
+
+Open data:
+To01  00 01 02 03 04 05 06 07 
+To02  08 09 0a 0b 0c 0d 0e 0f 
+To03  10 11 12 13 14 15 16 17 
+To04  18 19 1a 1b 1c 1d 1e 1f 
+To05  20 21 22 23 24 25 26 27 
+To06  28 29 2a 2b 2c 2d 2e 2f 
+To07  30 31 32 33 34 35 36 37 
+To08  38 39 3a 3b 3c 3d 3e 3f 
+To09  40 41 42 43 44 45 46 47 
+To10  48 49 4a 4b 4c 4d 4e 4f 
+To11  50 51 52 53 54 55 56 57 
+To12  58 59 5a 5b 5c 5d 5e 5f 
+To13  60 61 62 63 64 65 66 67 
+To14  68 69 6a 6b 6c 6d 6e 6f 
+To15  70 71 72 73 74 75 76 77 
+To16  78 79 7a 7b 7c 7d 7e 7f 
+To17  80 81 82 83 84 85 86 87 
+To18  88 89 8a 8b 8c 8d 8e 8f 
+To19  90 91 92 93 94 95 96 97 
+To20  98 99 9a 9b 9c 9d 9e 9f 
+To21  a0 a1 a2 a3 a4 a5 a6 a7 
+To22  a8 a9 aa ab ac ad ae af 
+To23  b0 b1 b2 b3 b4 b5 b6 b7 
+To24  b8 b9 ba bb bc bd be bf 
+To25  c0 c1 c2 c3 c4 c5 c6 c7 
+To26  c8 c9 ca cb cc cd ce cf 
+To27  d0 d1 d2 d3 d4 d5 d6 d7 
+To28  d8 d9 da db dc dd de df 
+To29  e0 e1 e2 e3 e4 e5 e6 e7 
+To30  e8 e9 ea eb ec ed ee ef 
+To31  f0 f1 f2 f3 f4 f5 f6 f7 
+To32  f8 f9 fa fb fc fd fe ff 
+
+Encrypted data:
+Ts01  3a 15 8f 86 c6 79 f3 02 
+Ts02  8d 3e fd 3a 60 42 45 d5 
+Ts03  91 85 95 23 b5 a3 43 0d 
+Ts04  27 c6 24 f5 47 1b d6 74 
+Ts05  2f b5 80 e3 24 de 82 b0 
+Ts06  75 53 45 b3 ef 2f 06 f0 
+Ts07  13 34 1e c5 d4 79 8e 27 
+Ts08  fb bd 02 ca e0 6e e7 fd 
+Ts09  a2 66 ae cb 02 bf ec 8d 
+Ts10  5e 8e b1 99 f2 fc f1 5e 
+Ts11  69 77 38 c6 0d 22 3b 9a 
+Ts12  8b 7e 63 17 45 63 0c dc 
+Ts13  18 c3 c8 e4 d4 97 09 6c 
+Ts14  78 41 86 77 92 a0 5f cd 
+Ts15  1c f9 02 99 6d ea 10 ac 
+Ts16  02 8d 2b 93 c0 a5 06 0b 
+Ts17  88 0c 9d 74 ad 19 57 8b 
+Ts18  59 ab ca 72 1c b6 c3 0a 
+Ts19  f9 95 61 66 6b a0 f2 64 
+Ts20  bc 5a 06 ba a0 89 7b 19 
+Ts21  62 7e 38 a0 3e bb 90 41 
+Ts22  f6 f5 42 79 64 0b c6 be 
+Ts23  c5 5a 46 f5 76 01 41 3a 
+Ts24  c0 8e 30 e4 07 e1 ec aa 
+Ts25  c8 6a b7 1f 4b 44 67 a6 
+Ts26  3a 05 51 e5 37 30 4c eb 
+Ts27  49 69 81 b2 33 e8 0b 3e 
+Ts28  2b 65 cd fd f4 bd f6 1c 
+Ts29  fa 3c 8e 04 14 a2 15 4d 
+Ts30  fd 49 18 e6 b0 e4 25 bb 
+Ts31  29 5f df f5 21 b1 a0 76 
+Ts32  4f 6f 8b 60 5d 1a dd ae 
+
+Decrypted data:
+Td01  00 01 02 03 04 05 06 07 
+Td02  08 09 0a 0b 0c 0d 0e 0f 
+Td03  10 11 12 13 14 15 16 17 
+Td04  18 19 1a 1b 1c 1d 1e 1f 
+Td05  20 21 22 23 24 25 26 27 
+Td06  28 29 2a 2b 2c 2d 2e 2f 
+Td07  30 31 32 33 34 35 36 37 
+Td08  38 39 3a 3b 3c 3d 3e 3f 
+Td09  40 41 42 43 44 45 46 47 
+Td10  48 49 4a 4b 4c 4d 4e 4f 
+Td11  50 51 52 53 54 55 56 57 
+Td12  58 59 5a 5b 5c 5d 5e 5f 
+Td13  60 61 62 63 64 65 66 67 
+Td14  68 69 6a 6b 6c 6d 6e 6f 
+Td15  70 71 72 73 74 75 76 77 
+Td16  78 79 7a 7b 7c 7d 7e 7f 
+Td17  80 81 82 83 84 85 86 87 
+Td18  88 89 8a 8b 8c 8d 8e 8f 
+Td19  90 91 92 93 94 95 96 97 
+Td20  98 99 9a 9b 9c 9d 9e 9f 
+Td21  a0 a1 a2 a3 a4 a5 a6 a7 
+Td22  a8 a9 aa ab ac ad ae af 
+Td23  b0 b1 b2 b3 b4 b5 b6 b7 
+Td24  b8 b9 ba bb bc bd be bf 
+Td25  c0 c1 c2 c3 c4 c5 c6 c7 
+Td26  c8 c9 ca cb cc cd ce cf 
+Td27  d0 d1 d2 d3 d4 d5 d6 d7 
+Td28  d8 d9 da db dc dd de df 
+Td29  e0 e1 e2 e3 e4 e5 e6 e7 
+Td30  e8 e9 ea eb ec ed ee ef 
+Td31  f0 f1 f2 f3 f4 f5 f6 f7 
+Td32  f8 f9 fa fb fc fd fe ff 
+
+
+
+GOST 28147-89.
+IMT mode.
+
+TEST 1
+Test key:
+X0  00  00  00  00
+X1  00  00  00  00
+X2  00  00  00  00
+X3  00  00  00  00
+X4  ff  ff  ff  ff
+X5  ff  ff  ff  ff
+X6  ff  ff  ff  ff
+X7  ff  ff  ff  ff
+
+Open data:
+To01  33 33 33 33 cc cc cc cc 
+To02  cc cc cc cc 33 33 33 33 
+
+I32  44 53 00 ad 
+
+TEST 2
+Test key:
+X0  ff  ff  ff  ff
+X1  ff  ff  ff  ff
+X2  ff  ff  ff  ff
+X3  ff  ff  ff  ff
+X4  00  00  00  00
+X5  00  00  00  00
+X6  00  00  00  00
+X7  00  00  00  00
+
+Open data:
+To01  33 33 33 33 cc cc cc cc 
+To02  cc cc cc cc 33 33 33 33 
+
+I32  10 96 13 1b 
+
+TEST 3
+Test key:
+X0  55  55  55  55
+X1  aa  aa  aa  aa
+X2  55  55  55  55
+X3  aa  aa  aa  aa
+X4  55  55  55  55
+X5  aa  aa  aa  aa
+X6  55  55  55  55
+X7  aa  aa  aa  aa
+
+Open data:
+To01  33 33 33 33 cc cc cc cc 
+To02  cc cc cc cc 33 33 33 33 
+
+I32  bf 87 ab 2c 
+
+TEST 4
+Test key:
+X0  aa  aa  aa  aa
+X1  55  55  55  55
+X2  aa  aa  aa  aa
+X3  55  55  55  55
+X4  aa  aa  aa  aa
+X5  55  55  55  55
+X6  aa  aa  aa  aa
+X7  55  55  55  55
+
+Open data:
+To01  33 33 33 33 cc cc cc cc 
+To02  cc cc cc cc 33 33 33 33 
+
+I32  db 02 88 f5 
+
+TEST 5
+Test key:
+X0  e0  f6  75  04
+X1  fa  fb  38  50
+X2  90  c3  c7  d2
+X3  3d  ca  b3  ed
+X4  42  12  47  15
+X5  8a  1e  ae  91
+X6  9e  cd  79  2f
+X7  bd  ef  bc  d2
+
+Open data:
+To01  33 33 33 33 cc cc cc cc 
+To02  cc cc cc cc 33 33 33 33 
+
+I32  ab db 75 46 
+
+TEST 6
+Test key:
+X0  e0  f6  75  04
+X1  fa  fb  38  50
+X2  90  c3  c7  d2
+X3  3d  ca  b3  ed
+X4  42  12  47  15
+X5  8a  1e  ae  91
+X6  9e  cd  79  2f
+X7  bd  ef  bc  d2
+
+Open data:
+To01  00 01 02 03 04 05 06 07 
+To02  08 09 0a 0b 0c 0d 0e 0f 
+To03  10 11 12 13 14 15 16 17 
+To04  18 19 1a 1b 1c 1d 1e 1f 
+To05  20 21 22 23 24 25 26 27 
+To06  28 29 2a 2b 2c 2d 2e 2f 
+To07  30 31 32 33 34 35 36 37 
+To08  38 39 3a 3b 3c 3d 3e 3f 
+To09  40 41 42 43 44 45 46 47 
+To10  48 49 4a 4b 4c 4d 4e 4f 
+To11  50 51 52 53 54 55 56 57 
+To12  58 59 5a 5b 5c 5d 5e 5f 
+To13  60 61 62 63 64 65 66 67 
+To14  68 69 6a 6b 6c 6d 6e 6f 
+To15  70 71 72 73 74 75 76 77 
+To16  78 79 7a 7b 7c 7d 7e 7f 
+To17  80 81 82 83 84 85 86 87 
+To18  88 89 8a 8b 8c 8d 8e 8f 
+To19  90 91 92 93 94 95 96 97 
+To20  98 99 9a 9b 9c 9d 9e 9f 
+To21  a0 a1 a2 a3 a4 a5 a6 a7 
+To22  a8 a9 aa ab ac ad ae af 
+To23  b0 b1 b2 b3 b4 b5 b6 b7 
+To24  b8 b9 ba bb bc bd be bf 
+To25  c0 c1 c2 c3 c4 c5 c6 c7 
+To26  c8 c9 ca cb cc cd ce cf 
+To27  d0 d1 d2 d3 d4 d5 d6 d7 
+To28  d8 d9 da db dc dd de df 
+To29  e0 e1 e2 e3 e4 e5 e6 e7 
+To30  e8 e9 ea eb ec ed ee ef 
+To31  f0 f1 f2 f3 f4 f5 f6 f7 
+To32  f8 f9 fa fb fc fd fe ff 
+
+I32  94 b5 b2 47 
