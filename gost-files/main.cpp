@@ -2,6 +2,8 @@
 #include <fstream>
 #include <strstream>
 #include <iomanip>
+#include <stdlib.h>
+#include <string.h>
 #include "util.h"
 #include "gost.h"
 #include "gmodes.h"
@@ -25,7 +27,7 @@ void FnameFromNum (char filename[], int num)
 {
 	char fext[4];
 	char fname[MAXFN] = "test."; 
-	sprintf_s(fext,"%03x",num);
+    sprintf(fext,"%03x",num);
 	strcat_s(fname,fext);
 	strcpy_s(filename, 20, fname);
 }
@@ -141,15 +143,15 @@ int main(int argc, char* argv[])
 	char tofile[20], ivfile[20], keyfile[20];
 
 	int tonum = 1;	
-	sprintf_s(tofile, "to%d.dat", tonum);
+    sprintf(tofile, "to%d.dat", tonum);
 	
 	int snum = 1;
-	sprintf_s(ivfile, "s%d.dat", snum);
+    sprintf(ivfile, "s%d.dat", snum);
 	
 	int kzunum;
 	for ( kzunum = 1; kzunum <= 5; kzunum++ )
 	{
-		sprintf_s(keyfile, "kzu%d.dat", kzunum);
+        sprintf(keyfile, "kzu%d.dat", kzunum);
 	
 		cout << endl << keyfile << endl;
 
@@ -157,13 +159,13 @@ int main(int argc, char* argv[])
 	}
 
 	tonum = 2;	
-	sprintf_s(tofile, "to%d.dat", tonum);
+    sprintf(tofile, "to%d.dat", tonum);
 
 	snum = 2;
-	sprintf_s(ivfile, "s%d.dat", snum);
+    sprintf(ivfile, "s%d.dat", snum);
 
 	kzunum = 5;
-	sprintf_s(keyfile, "kzu%d.dat", kzunum);
+    sprintf(keyfile, "kzu%d.dat", kzunum);
 
 	run_one_test( mode, tofile, ivfile, keyfile );
 

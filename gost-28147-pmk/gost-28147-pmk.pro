@@ -3,5 +3,14 @@ CONFIG += console
 CONFIG -= app_bundle
 CONFIG -= qt
 
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    gmodes.cpp \
+    gost.cpp \
+    util.cpp
+
+HEADERS += \
+    gmodes.h \
+    gost.h \
+    util.h \
+    vchtest.h
 

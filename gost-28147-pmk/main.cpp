@@ -2,6 +2,8 @@
 #include <fstream>
 #include <strstream>
 #include <iomanip>
+#include <stdlib.h>
+#include <string.h>
 #include "util.h"
 #include "gost.h"
 #include "gmodes.h"
