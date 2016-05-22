@@ -4,7 +4,7 @@
 
 #include <iostream>
 #include <iomanip>
-#include <gost.h>
+#include <opencl/gost.h>
 
 using namespace std;
 using namespace OpenCL;
