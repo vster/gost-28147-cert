@@ -24,6 +24,7 @@ class GOST : public BlockCipher
       void set_key(const byte[], u32bit = KEYLENGTH) throw(InvalidKeyLength);
       void generate_sbox( );
       void generate_sbox( int );
+	  void output_oid();
 	  void output_oid( int );
       void clear() throw() { EK.clear(); }
       GOST() : BlockCipher(name(), BLOCKSIZE, KEYLENGTH) {}

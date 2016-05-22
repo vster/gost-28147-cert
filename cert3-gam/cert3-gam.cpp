@@ -17,7 +17,7 @@ const u32bit C1 = 0x01010104;
 const u32bit C2 = 0x01010101;
 const u32bit FF = 0xffffffff;
 
-void main(void)
+int main(void)
 {
 	GOST g1;
 	void gam_run2test(GOST, byte [CT2][BS], byte [BS], byte [KL]);
