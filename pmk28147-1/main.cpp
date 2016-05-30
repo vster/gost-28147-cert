@@ -26,8 +26,8 @@ void FnameFromNum (char filename[], int num)
 	char fext[4];
 	char fname[MAXFN] = "test."; 
     sprintf(fext,"%03x",num);
-	strcat_s(fname,fext);
-	strcpy_s(filename, 20, fname);
+    strcat(fname,fext);
+    strcpy(filename, fname);
 }
 
 // Make one test file
