@@ -29,8 +29,8 @@ void FnameFromNum (char filename[], int num)
 	char fext[4];
 	char fname[MAXFN] = "test."; 
     sprintf(fext,"%03x",num);
-	strcat_s(fname,fext);
-	strcpy_s(filename, 20, fname);
+    strcat(fname,fext);
+    strcpy(filename, fname);
 }
 
 
@@ -108,7 +108,7 @@ void AllTextTest()
 	generate_sbox(oidnum);
 
 	char fname[MAXFN] = "AllText_";
-	strcat_s(fname,OidExt[oidnum]);
+    strcat(fname,OidExt[oidnum]);
 	// strcat_s(fname,".dat");
 
 	outfile.open(fname);
@@ -135,7 +135,7 @@ void AllKeyTest()
 	generate_sbox(oidnum);
 
 	char fname[MAXFN] = "AllKey_";
-	strcat_s(fname,OidExt[oidnum]);
+    strcat(fname,OidExt[oidnum]);
 	// strcat_s(fname,".dat");
 
 	outfile.open(fname);
@@ -160,7 +160,7 @@ void HalfByteTest()
 	generate_sbox(oidnum);
 
 	char fname[MAXFN] = "HalfByteText_";
-	strcat_s(fname,OidExt[oidnum]);
+    strcat(fname,OidExt[oidnum]);
 	// strcat_s(fname,".dat");
 
 	outfile.open(fname);
@@ -190,7 +190,7 @@ void RandByteTest()
 	generate_sbox(oidnum);
 
 	char fname[MAXFN] = "RandByteText_";
-	strcat_s(fname,OidExt[oidnum]);
+    strcat(fname,OidExt[oidnum]);
 	// strcat_s(fname,".dat");
 
 	outfile.open(fname);
